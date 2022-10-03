@@ -21,12 +21,33 @@ export default function Footer() {
               : `2022 - ${new Date().getFullYear()}`}{" "}
             Ferrisgram Developers — All rights reserved.
           </p>
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start font-light text-xs text-center lg:text-right">
-            Ferrisgram is licensed under The MIT License.
+          <div className="sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start font-normal text-xs text-center lg:text-right">
+            <span>
+              Ferrisgram is licensed under{" "}
+              <a
+                href="https://github.com/ferrisgram/ferrisgram/blob/dev-working/LICENSE"
+                className="text-gray-200 hover:text-blue-300 hover:underline transition-colors duration-200"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {" "}
+                The MIT License.
+              </a>
+            </span>
             <br />
-            Ferrisgram Logos are licensed under Creative Commons Zero v1.0
-            Universal.
-          </span>
+            <span>
+              Ferrisgram Logos are licensed under{" "}
+              <a
+                href="https://creativecommons.org/publicdomain/zero/1.0/"
+                className="text-gray-200 hover:text-blue-300 hover:underline transition-colors duration-200"
+                rel="noreferrer"
+                target="_blank"
+              >
+                {" "}
+                Creative Commons Zero v1.0 Universal.
+              </a>
+            </span>
+          </div>
         </div>
       </footer>
     </>
